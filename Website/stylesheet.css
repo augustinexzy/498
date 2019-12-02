@@ -1,0 +1,39 @@
+body{
+  background-color: #393C44;
+}
+
+.container{
+  padding-top: 40px;
+}
+
+#carouselExampleIndicators img{
+  height: 600px;
+}
+
+#bottominformation{
+  color:white;
+}
+
+#bottominformation img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.featurette-divider{
+  padding: 10px;
+}
+
+.card-columns{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+footer{
+  color: white;
+}
+
+.table{
+  color: white;
+  border-bottom: 20px;
+}

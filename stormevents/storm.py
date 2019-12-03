@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
+import numpy as np
+import statsmodels.api as sm
+from statsmodels.sandbox.regression.predstd import wls_prediction_std
 
 def getseries(file):
     df = pd.read_csv(file,sep=',',header=0, usecols=[8],dtype=str)
@@ -9,34 +12,44 @@ def getseries(file):
     s = s.sort_index()
     return s
 
-def plot(df):
+def plots(df):
     for state in df.index:
         ax = plt.gca()
         ax.scatter(y=df.loc[state,:],x=df.columns)
-        xticks = ([2009,2010,2011,2012,2013,2014,2015,2016,2017,2018])
-        x = np.linspace(xticks[0], xticks[-1], 10)
+        xticks = ([2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018])
+        x = np.linspace(xticks[0], xticks[-1], 15)
         X = sm.add_constant(x)
-        model = sm.OLS(df.loc['ALABAMA',:],X)
+        model = sm.OLS(df.loc[state,:],X)
         results = model.fit()
         y = results.params['x1'] * x + results.params['const']
         plt.plot(xticks, y, linewidth=4, color='red')
+        ax.set_title(r'Stormevents in ' + state + ' from 2009 to 2018', fontsize=18)
+        ax.set_ylabel(r'Numbers of Stormevents occured', fontsize=18)
+        ax.set_xlabel(r'Year', fontsize=18)
+        prstd, iv_l, iv_u = wls_prediction_std(results)
+        ax.plot(x, iv_u, 'r--')
+        ax.plot(x, iv_l, 'r--')
+        x1n = np.linspace(2019,2023,5)
+        Xnew = sm.add_constant(x1n)
+        ynewpred =  resultss.predict(Xnew)
+        ax.plot(np.hstack((xticks, x1n)), np.hstack((y, ynewpred)), 'r', label="OLS prediction")
+        #print(results.summary())
+        plt.show()
     
 
 def main():
     l = []
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
     files.sort()
-    files = files[1:11]
-
+    files = files[1:16]
     for file in files:
         s = getseries(file)
         l.append(s)
-
-    d
+    df = pd.DataFrame(l,[2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018])
     df = df.T
-    indexname = df[df[2009]<100].index
+    indexname = df[df[2004]<100].index
     df.drop(indexname,inplace=True)
-    plot(df)
+    plots(df)
 
 if __name__ == '__main__':
     main()

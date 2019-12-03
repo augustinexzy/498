@@ -15,15 +15,15 @@ def getseries(file):
 def plots(df):
     for state in df.index:
         ax = plt.gca()
-        ax.scatter(y=df.loc[state,:],x=df.columns)
+        ax.scatter(y=df.loc[state,:],x=df.columns,label='Data')
         xticks = ([2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018])
         x = np.linspace(xticks[0], xticks[-1], 15)
         X = sm.add_constant(x)
         model = sm.OLS(df.loc[state,:],X)
         results = model.fit()
         y = results.params['x1'] * x + results.params['const']
-        plt.plot(xticks, y, linewidth=4, color='red')
-        ax.set_title(r'Stormevents in ' + state + ' from 2009 to 2018', fontsize=18)
+        plt.plot(xticks, y, linewidth=4, color='red', label="Linear")
+        ax.set_title(r'Stormevents in ' + state + ' from 2004 to 2018 & Prediction for next five years', fontsize=16)
         ax.set_ylabel(r'Numbers of Stormevents occured', fontsize=18)
         ax.set_xlabel(r'Year', fontsize=18)
         prstd, iv_l, iv_u = wls_prediction_std(results)
@@ -31,9 +31,12 @@ def plots(df):
         ax.plot(x, iv_l, 'r--')
         x1n = np.linspace(2019,2023,5)
         Xnew = sm.add_constant(x1n)
-        ynewpred =  resultss.predict(Xnew)
-        ax.plot(np.hstack((xticks, x1n)), np.hstack((y, ynewpred)), 'r', label="OLS prediction")
-        #print(results.summary())
+        ynewpred =  results.predict(Xnew)
+        newxticks = np.hstack((x,x1n))
+        newxticks = newxticks.astype(int)
+        ax.plot(newxticks, np.hstack((y, ynewpred)), 'g', label="OLS prediction")
+        ax.set_xticks(newxticks)
+        ax.legend(loc="best");
         plt.show()
     
 

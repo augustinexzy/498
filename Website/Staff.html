@@ -7,230 +7,134 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Disaster</title>
+    <link rel="stylesheet" href="stylesheet1.css">
+    <title>Staff List</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
+    <div class= "container-fluid">
+      <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="https://www.data.gov">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+              <a class="nav-link active" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                Main Page<span class="sr-only">(current)</span>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Earthquake.html">Earthquake</a>
-                <a class="dropdown-item" href="Tsunami.html">Tsunami</a>
-                <a class="dropdown-item" href="Mudslide.html">Mudslide</a>
-                <a class="dropdown-item" href="Hurricane.html">Hurricane</a>
-                <a class="dropdown-item" href="Other.html">Other</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More</a>
+              <a class="nav-link" href="Earthquake.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                Earthquake 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fire.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                Fire
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Hurricane.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                Hurricane
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Flood.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                Flood 
+              </a>
+            </li>                       
+
+            <li class="nav-item">
+              <a class="nav-link" href="Stuff.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <b>Stuff</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                Detail Reports
+              </a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Want to Know More</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="https://catalog.data.gov/dataset?q=earthquake&vocab_category_all=Earthquake&sort=score+desc%2C+name+asc">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Earthquake Data
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://catalog.data.gov/dataset?vocab_category_all=Fire&q=earthquake&sort=score+desc%2C+name+asc&vocab_category_all=Earthquake&_vocab_category_all_limit=0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Fire Data
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://catalog.data.gov/dataset?vocab_category_all=Fire&q=earthquake&sort=score+desc%2C+name+asc&vocab_category_all=Earthquake&_vocab_category_all_limit=0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Flood Data
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://catalog.data.gov/dataset?vocab_category_all=Fire&q=earthquake&sort=score+desc%2C+name+asc&vocab_category_all=Earthquake&_vocab_category_all_limit=0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Hurricane Dat
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
-    </header>
 
-    <main>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="picture/Hurricant.jpg" class="d-block w-100" alt="Tornado">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Tornado</h1>
-              <p>A tornado is a rapidly rotating column of air that is in contact
-                with both the surface of the Earth and a cumulonimbus cloud or,
-                in rare cases, the base of a cumulus cloud. </p>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img src="picture/Typhoon.jpg" class="d-block w-100" alt="Hurricant">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Hurricant</h1>
-              <p>A Hurricant is a rapidly rotating storm system characterized by
-                a low-pressure center, a closed low-level atmospheric circulation,
-                strong winds, and a spiral arrangement of thunderstorms that produce
-                heavy rain or squalls.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="picture/Earthquake.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Earthquake</h1>
-              <p>An earthquake (also known as a quake, tremor or temblor) is the
-                shaking of the surface of the Earth resulting from a sudden release
-                of energy in the Earth's lithosphere that creates seismic waves.</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img src="picture/pic1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Search</h5>
-                <p class="card-text">We collect data from professional data website and manipulate those date as visional graph.</p>
-                <a href="https://catalog.data.gov/dataset?groups=disasters&_groups_limit=0#sec-vocab_category_all" class="btn btn-primary">Try to click this</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img src="picture/pic2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">About this Website</h5>
-                <p class="card-text">we collect data and transfer those raw data to meanful data, and then analysis it by python.</p>
-                <a href="https://www.python.org/" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img src="picture/pic3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Our Team</h5>
-                <p class="card-text">We are ISTA major comes from Univeristy of arizona. Want to know more about us?</p>
-                <a href="#" class="btn btn-primary">Know more about us</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="bottominformation" class="container">
-        <div class="media">
-          <img src="picture/bot1.gif" class="align-self-start mr-3" alt="...">
-          <div class="media-body">
-            <h1 class="mt-0">Do you KNOW Disasters.</h1>
-            <p>According to statistics, more than 5 million earthquakes occur every year on the earth, that is, tens of thousands of earthquakes occur every day. About ten or twenty times; </p>
-            <p>About two earthquakes can cause particularly severe disasters.</p>
-          </div>
-        </div>
-        <hr class="featurette-divider">
-
-        <div class="media">
-          <img src="picture/bot2.jpg" class="align-self-start mr-3" alt="...">
-          <div class="media-body">
-            <h1 class="mt-0">How to Prevent Disasters</h1>
-            <p>Landslides and mudslides usually have some obvious signs. For example, there are some deep cracks in the mountain or the cracks continue to increase; the trees or rocks in </p>
-            <p>The mountain are shifted or tilted in a short time; the rocks and soil on the mountain continue to roll down or collapse in multiple small areas. Debris flow mostly occurs </p>
-            <p>in the case of sustained heavy rainfall after the earthquake. If there is a train-like roar or a thunderous noise from the ground or a valley and a slight vibration, you </p>
-            <p>Must evacuate immediately. This is likely to be a sign of an imminent mudslide.</p>
-          </div>
-        </div>
-        <hr class="featurette-divider">
-      </div>
-
-      <div class="card-columns">
-        <div class="card">
-          <img src="picture/Foot1.jpg" class="card-img-top" alt="Tornado">
-          <div class="card-body">
-            <h5 class="card-title">Funnel cloud</h5>
-            <p class="card-text">This tornado has no funnel cloud; however, the rotating dust cloud indicates that strong winds are occurring at the surface.</div>
-        </div>
-        <div class="card p-3">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>They tend to be larger than shallow landslides and form along a plane of weakness such as a fault or bedding plane.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Johnson, B.F <cite title="Source Title">Slippery slope</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <img src="picture/Foot2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Hurricane Isabel</h5>
-            <p class="card-text">The eye, eyewall, and surrounding rainbands, characteristics of tropical cyclones in the narrow sense, are clearly visible in this view from space.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>"Jehovah saw that the evil on earth was so great that he declared that he would use the flood to destroy all living things with flesh and breath on the earth.</p>
-            <footer class="blockquote-footer text-white">
-              <small>
-                <cite title="Source Title">Bible</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Debris flow</h5>
-            <p class="card-text">Slope material that becomes saturated with water may develop into a debris flow or mud flow.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="picture/Foot3.jpeg" class="card-img-top" alt="...">
-        </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
-            <p>Shock waves from an earthquake can travel a long way, spreading through the ground just like ripples spread through water</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Rooney, Anne<cite title="Source Title">Earthquake</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Landspout</h5>
-            <p class="card-text">A landspout, or dust-tube tornado, is a tornado not associated with a mesocyclone. The name stems from their characterization as a "fair weather waterspout on land".</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="container">
+    <div class="container">
       <div class="row">
-        <p class="col-8">© 2017-2019 Company, Inc. · </p>
-        <p class="col-4"><a href="index.html"> Back to top</a></p>
+        <div class="col-10">
+          <article class="Watchman">
+            <header>Hongzhi Jiang</header>
+            <div class="row">
+              <p class="col-6">Information Science and Technology major with an ESociety Minor currently attending The University of Arizona. Aiming to leverage my knowledge of data analysis, data engineer, and data management to fill a data analyst role.
+              <a href="https://www.linkedin.com/in/hongzhi-jiang/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wanna see more?</a>
+              <p class="col-6"><img src="staff/Hongzhi.jpeg" alt="Rorschach" width="300px" height="500px"></p>
+            </div>
+          </article>
+        </div>
       </div>
-    </footer>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <article class="Darkknight">
+            <header>Zhengyang Xu</header>
+            <div class="row">
+              <p class="col-6"><img src="staff/Zhengyang.jpeg" alt="Batman" width="400px" height="400px"></p>
+              <p class="col-6">Worked in a team to input and analyze the utility and commodity usage data and input it into the Brewers Association Sustainability Benchmarking Tool. Identified and implemented protocol changes to reduce monthly water and electrical usage
+              <a href="https://www.linkedin.com/in/zhengyang-xu/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wanna see more?</a>          
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+          <article class="Joker">
+            <header>Yuxuan Zhou</header>
+            <div>
+              <p><img src="staff/Yuxuan.jpeg" alt="Joker" width="750px"></p>
+              <p>My major is information science and technology. I had experience in web design, python and c#. I think I will be a good group member while people will doing project, I had some group work experience in the past and I think I will be a good negotiator.
+              Right now, I am Right now, I am trying to learn more useful JavaScript library. I am trying to make the website more beautiful. So, I can design website that can analyze data inside the website.
+              <a href="inkedin.com/in/yuxuan-zhou-328518197/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wanna see more?</a>
+          </article>
+      </div>
+    </div>
 
 
     <!-- Optional JavaScript -->

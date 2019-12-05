@@ -1,0 +1,46 @@
+.container{
+  padding: 20px;
+}
+
+.lead{
+  font-style: italic;
+}
+
+
+.row{
+  padding-bottom: 20px;
+}
+
+p{
+  font-size: 25px;
+  font-style: oblique;
+  color: #FFFFFF;
+}
+
+header,h1,button{
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+header{
+  font-size: 40px;
+  border-bottom: 20px;
+  color: white;
+}
+
+table, th, td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+#second{
+  padding-bottom: 20px;
+}
+
+body{
+  background-color: #393C44;
+}
+
+.lead{
+  color: #000000;
+}

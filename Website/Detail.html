@@ -7,10 +7,49 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet1.css">
-    <title>Staff List</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Earthquake</title>
   </head>
   <body>
+   <!--<header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.data.gov">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Earthquake.html"><b>Earthquake</b></a>
+                <a class="dropdown-item" href="Fire.html">Fire</a>
+                <a class="dropdown-item" href="Flood.html">Flood</a>
+                <a class="dropdown-item" href="Hurricane.html">Hurricane</a>
+                <a class="dropdown-item" href="Other.html">Other</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+   </header>-->
+    
     <div class= "container-fluid">
       <div class="row">
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -25,7 +64,7 @@
             <li class="nav-item">
               <a class="nav-link" href="Earthquake.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                Earthquake 
+                Earthquake
               </a>
             </li>
             <li class="nav-item">
@@ -55,13 +94,13 @@
             <li class="nav-item">
               <a class="nav-link" href="Stuff.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                <b>Stuff</b>
+                Stuff
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="Detail.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                Detail Reports
+                <b>Detail Reports</b>
               </a>
             </li>
           </ul>
@@ -100,46 +139,77 @@
           </ul>
         </div>
       </nav>
+    
+      <main class="col-md-8 ml-sm-auto col-lg-10 px-4">
+        <div class="jumbotron">
+          <h1 class="display-4">Total</h1>
+          <p class="lead">This page shows the total disaster happened in American from 1953 - 2019</p>
+          <hr class="my-4">
+          <p>If you want to know more</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-10">
-          <article class="Watchman">
-            <header>Hongzhi Jiang</header>
-            <div class="row">
-              <p class="col-6">Information Science and Technology major with an ESociety Minor currently attending The University of Arizona. Aiming to leverage my knowledge of data analysis, data engineer, and data management to fill a data analyst role.
-              <a href="https://www.linkedin.com/in/hongzhi-jiang/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wanna see more?</a>
-              <p class="col-6"><img src="staff/Hongzhi.jpeg" alt="Rorschach" width="300px" height="500px"></p>
+        <div class="container">
+          <div class="col-sm">
+            <div class="card mb-4">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <img src="total/Figure_1.png" class="card-img" alt="Figure_1">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title">AL-ND</h5>
+                    <p class="card-text">This picture shows the disaster happend from 1953 - 2019</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </article>
+          </div>
+
+          <div class="col-sm">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title">KY-NM</h5>
+                    <p class="card-text">This picture shows the disaster happend from 1953 - 2019</p>              
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <img src="total/Figure_2.png" class="card-img" alt="figure">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card mb-4">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <img src="total/Figure_3.png" class="card-img" alt="Figure_1">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title">NY-WY</h5>
+                    <p class="card-text">This picture shows the disaster happend from 1953 - 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-10">
-          <article class="Darkknight">
-            <header>Zhengyang Xu</header>
-            <div class="row">
-              <p class="col-6"><img src="staff/Zhengyang.jpeg" alt="Batman" width="400px" height="400px"></p>
-              <p class="col-6">Worked in a team to input and analyze the utility and commodity usage data and input it into the Brewers Association Sustainability Benchmarking Tool. Identified and implemented protocol changes to reduce monthly water and electrical usage
-              <a href="https://www.linkedin.com/in/zhengyang-xu/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wanna see more?</a>          
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="row">
-          <article class="Joker">
-            <header>Yuxuan Zhou</header>
-            <div>
-              <p><img src="staff/Yuxuan.jpeg" alt="Joker" width="750px"></p>
-              <p>My major is information science and technology. I had experience in web design, python and c#. I think I will be a good group member while people will doing project, I had some group work experience in the past and I think I will be a good negotiator.
-              Right now, I am Right now, I am trying to learn more useful JavaScript library. I am trying to make the website more beautiful. So, I can design website that can analyze data inside the website.
-              <a href="https://www.linkedin.com/in/yuxuan-zhou-328518197/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wanna see more?</a>
-          </article>
+      </main>
       </div>
     </div>
+
+
+    <footer class="container">
+      <div class="row">
+        <p class="col-8">© 2017-2019 Company, Inc. · </p>
+        <p class="col-4"><a href="Earthquake.html"> Back to top</a></p>
+      </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->

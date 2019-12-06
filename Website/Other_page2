@@ -52,12 +52,12 @@
     <main>
       <div class="container">
               <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Alabama</a>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Georgia</a>
               </p>
               <div class="row">
                 <div class="col">
                   <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    <img src="graphs/Alabama.png" class="card-img-top" alt="Alabam">
+                    <img src="graphs/Georgia.png" class="card-img-top" alt="Georgia">
                   </div>
                 </div>
               </div>
@@ -65,12 +65,12 @@
 
        <div class="container">
               <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Alaska</a>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Gulf of Maxico</a>
               </p>
               <div class="row">
                 <div class="col">
                   <div class="collapse multi-collapse" id="multiCollapseExample2">
-                    <img src="graphs/Alaska.png" class="card-img-top" alt="Alaska">
+                    <img src="graphs/Gulf of Maxico.png" class="card-img-top" alt="Gulf of Maxico">
                   </div>
                 </div>
               </div>
@@ -78,12 +78,12 @@
 
        <div class="container">
               <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Arizona</a>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Hawaii</a>
               </p>
               <div class="row">
                 <div class="col">
                   <div class="collapse multi-collapse" id="multiCollapseExample3">
-                    <img src="graphs/Arizona.png" class="card-img-top" alt="Arizona">
+                    <img src="graphs/Hawaii.png" class="card-img-top" alt="Hawaii">
                   </div>
                 </div>
               </div>
@@ -91,12 +91,12 @@
 
        <div class="container">
               <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Arkansas</a>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">ldaho</a>
               </p>
               <div class="row">
                 <div class="col">
                   <div class="collapse multi-collapse" id="multiCollapseExample4">
-                    <img src="graphs/Arkansas.png" class="card-img-top" alt="Arkansas">
+                    <img src="graphs/ldaho.png" class="card-img-top" alt="ldaho">
                   </div>
                 </div>
               </div>
